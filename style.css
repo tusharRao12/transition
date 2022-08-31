@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background: #000;
+}
+.main h1{
+    color: white;
+    text-align: center;
+}
+.first-box{
+    width: 20vw;
+    height: 15vh;
+    background-color: pink;
+    margin: 40px;
+    /* transition-property: width,height,background;
+    transition-duration: 2s,2s,2s; */
+    transition: width,height,background 1s,1s,1s; 
+    /* For give in all we use */
+    /* transition: all 2s; */
+    transition-timing-function: ease-in;
+    /* For giving delay we use trainsition delay */
+    transition-delay: 1s;
+    /* How much time you have to complete */
+    transition-duration: 2s;
+    
+    /* For done in steps we use steps 
+    transition-timing-function: steps(4); */
+    /* For doing in one step
+    transition-timing-function: step-start;*/
+    /* transition-timing-function: step-end; */
+    /* For giving smoothness in steps we use cunic bazier  */
+
+
+    /* Shorthand */
+    /* transition: property duration timing-function delay */
+}
+.first-box:hover{
+    width: 40vw;
+    height: 20vh;
+    background-color: orange;
+}
+.second-box{
+    margin: 40px;
+}
+.second-box input{
+    width: 10vw;
+}
+.second-box input:focus{
+    width: 30vw;
+    transition: width 1s;
+}
